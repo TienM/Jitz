@@ -24,6 +24,8 @@
     "passport-local": "^1.0.0",
     "serve-favicon": "~2.3.0",
     "stripe": "^4.13.0",
+    "express-stormpath": "*",
+    "nodemon": "*",
     "dotenv":"^2.0.0"
   }
 }
