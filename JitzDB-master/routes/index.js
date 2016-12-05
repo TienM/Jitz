@@ -42,6 +42,9 @@ router.get('/food', function(req, res, next) {
   res.render('food', { title: 'Food Items' });
 });
 
+router.get('/admin', function(req, res, next) {
+  res.render('admin', { title: 'Jitz Admin'});
+});
 
 /** GET menu page. */
 router.get('/menu', function(req, res, next) {

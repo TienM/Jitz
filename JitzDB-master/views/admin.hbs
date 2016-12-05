@@ -1,0 +1,61 @@
+{{> header}}
+
+<style>
+
+body {
+  color: #CFB055;
+  min-width: 350px;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 1em;
+}
+
+h1, form {
+  text-align: center;
+  font-weight: 100%;
+  font: "Lucida Grande", Helvetica, Arial, sans-serif;
+  line-height: 1em;
+  max-width: 600px;
+   margin: 20px auto;
+}
+
+#form-content {
+  padding: 24px;
+  line-height: 1em;
+}
+textarea, input {
+  border:0; outline:0;
+     padding: 1em;
+     @include border-radius(8px);
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+}
+</style>
+
+
+  <h1>Jitz Admin</h1>
+  <hr>
+  <div id="form-content">
+  <form action="#" method="post">
+    <h4>Product Type:</h4>
+    <div><input id="radio" type="radio" name="type" value="Hot" checked> Hot Drink</div>
+    <div><input id="radio" type="radio" name="type" value="Cold"> Cold Drink</div>
+    <div><input id="radio" type="radio" name="type" value="Food"> Food</div>
+    <br>
+    <br>
+    <div class="text">
+    <input type="text" id="input-name" placeholder="Name">
+    <input type="price" id="input-price" placeholder="Price">
+    </div>
+
+    <div class="text">
+      <textarea name="message" type="text" id="input-message" placeholder="Description"></textarea>
+    </div>
+      <br>
+    <input type="submit" name="submit">
+  </form>
+</div>
+
+
+
+{{> footer}}
