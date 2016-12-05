@@ -5,5 +5,4 @@
 * Reduce and increase by one item and removes them all
 * Stripe is used to charge
 * Passport used to authenticate
-* See it live at https://stark-ocean-65686.herokuapp.com
-* Hello
+* See it live at https://jitz2.herokuapp.com/

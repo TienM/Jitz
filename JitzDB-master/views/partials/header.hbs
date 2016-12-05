@@ -102,7 +102,16 @@
             <li class="dropdown">
                 <a href="/order">ORDER</a>
             </li>
+              {{# if login }}
+              <li><a href="/users/profile">PROFILE</a></li>
+              <li><a href="/logout">LOGOUT</a></li>
+              {{ else }}
+              <li><a href="/login">LOGIN</a></li>
+              <li><a href="/register">REGISTER</a></li>
+              {{/if}}
+              
           </ul>
+              
       </div>
       <!--/.navbar-collapse-->
   </nav>
