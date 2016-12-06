@@ -28,6 +28,10 @@ router.get('/game', function(req, res, next) {
   res.render('game', { title: 'Secret Game' });
 });
 
+router.get('/feedback', function(req, res, next) {
+  res.render('feedback', { title: 'Feedback' });
+});
+
 router.get('/locations', function(req, res, next) {
   res.render('locations', { title: 'Locations' });
 });
