@@ -12,7 +12,6 @@ body {
 h1, form {
   text-align: center;
   font-weight: 100%;
-  font: "Lucida Grande", Helvetica, Arial, sans-serif;
   line-height: 1em;
   max-width: 600px;
    margin: 20px auto;
@@ -36,7 +35,7 @@ textarea, input {
   <h1>Jitz Admin</h1>
   <hr>
   <div id="form-content">
-  <form action="#" method="post">
+  <form action="product.js" method="post">
     <h4>Product Type:</h4>
     <div><input id="radio" type="radio" name="type" value="Hot" checked> Hot Drink</div>
     <div><input id="radio" type="radio" name="type" value="Cold"> Cold Drink</div>
@@ -45,7 +44,8 @@ textarea, input {
     <br>
     <div class="text">
     <input type="text" id="input-name" placeholder="Name">
-    <input type="price" id="input-price" placeholder="Price">
+    <input type="text" id="input-price" placeholder="Price">
+    <input type="text" id="input-url" placeholder="Image URL">
     </div>
 
     <div class="text">

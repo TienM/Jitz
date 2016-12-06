@@ -13,7 +13,6 @@ var session = require('express-session');
 var passport = require('passport');
 var flash = require('connect-flash');
 var validator = require('express-validator');
-var stormpath = require('express-stormpath');
 var MongoStore = require('connect-mongo')(session);
 
 var routes = require('./routes/index');
@@ -28,9 +27,6 @@ require('./config/passport');
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');
 
-app.use(stormpath.init(app, {
-  website: true
-}));
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -89,13 +85,6 @@ app.use(function(err, req, res, next) {
     message: err.message,
     error: {}
   });
-});
-
-
-// Stormpath will let you know when it's ready to start authenticating users.
-app.on('stormpath.ready', function () {
-  app.listen(3001);
-  console.log('Stormpath Ready! Server started on port 3001');
 });
 
 
