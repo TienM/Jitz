@@ -20,13 +20,12 @@ var userRoutes = require('./routes/users');
 
 var app = express();
 
-mongoose.connect(process.env.MONGO_CONNECT);
+mongoose.connect(process.env.MONGO_URL);
 require('./config/passport');
 
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
 app.set('view engine', '.hbs');
-
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
