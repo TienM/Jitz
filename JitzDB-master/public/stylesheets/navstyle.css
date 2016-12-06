@@ -3,7 +3,9 @@
   position: absolute;
   background-color: #CFB055 !important;
 }
-
+.dropdown:hover {
+  color: blue !important;
+}
 
 .navbar-header{
   /*background-color: #CFB055 !important;*/
@@ -15,6 +17,11 @@
   /*gold*/
 }
 
+.dropdown-toggle{
+	color: white;
+  /*background-color: #CFB055 !important;*/
+  /*gold*/
+}
 .dropdown-toggle{
 	color: white;
   /*background-color: #CFB055 !important;*/
@@ -36,7 +43,6 @@ color: black !important;
 
 a .navbar-brand{
 font-size: 36px;
-/*font-family: "Times New Roman", Times, serif;*/
 font-weight: 300;
 color: #CFB055 !important;
 }
