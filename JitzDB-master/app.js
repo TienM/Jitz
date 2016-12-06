@@ -1,5 +1,7 @@
 /** runs program locally */
-if(process.env.NODE_ENV !== 'production') require('dotenv').config();
+if(process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 var express = require('express');
 var path = require('path');
@@ -20,7 +22,7 @@ var userRoutes = require('./routes/users');
 
 var app = express();
 
-mongoose.connect(process.env.MONGO_CONNECT);
+mongoose.connect(process.env.MONGO_URL);
 require('./config/passport');
 
 // view engine setup
