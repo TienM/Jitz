@@ -175,10 +175,10 @@ p:hover {
 }
 a {
   color: #CFB055;
-  -webkit-transition:color 2s ease-in; 
-   -moz-transition:color 2s ease-in; 
-   -o-transition:color 2s ease-in; 
-   transition:color 2s ease-in; 
+  -webkit-transition:color .75s ease-in; 
+   -moz-transition:color .75s ease-in; 
+   -o-transition:color .75s ease-in; 
+   transition:color .75s ease-in; 
 }
 .homeText {
   /*background-color: : #00b7ff !important;*/
@@ -356,6 +356,6 @@ a {
 }
 
 a:hover {
-  color: #FBFFB9;
+  color: #f6ea8c;
   text-decoration: none;
 }
