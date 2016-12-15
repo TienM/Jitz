@@ -110,10 +110,12 @@ width: 90%;
 
 .thumbnail img {
     height: 200px;
+    padding: 5px;
 }
 
 .thumbnail a img {
   height: 200px;
+  padding: 5px;
 }
 
 .thumbnail .description {
