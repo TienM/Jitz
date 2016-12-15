@@ -175,6 +175,10 @@ p:hover {
 }
 a {
   color: #CFB055;
+  -webkit-transition:color 2s ease-in; 
+   -moz-transition:color 2s ease-in; 
+   -o-transition:color 2s ease-in; 
+   transition:color 2s ease-in; 
 }
 .homeText {
   /*background-color: : #00b7ff !important;*/
