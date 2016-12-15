@@ -360,3 +360,11 @@ a:hover {
   /*color: #f6ea8c;*/
   text-decoration: none;
 }
+
+.circleText {
+  -webkit-transition:color .10s ease-in; 
+   -moz-transition:color .10s ease-in; 
+   -o-transition:color .10s ease-in; 
+   transition:color .10s ease-in;
+  
+}
