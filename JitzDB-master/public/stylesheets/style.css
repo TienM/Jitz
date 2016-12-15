@@ -108,9 +108,7 @@ width: 90%;
   border-radius: 10px;
 }
 
-
-/*//walmart style below*/
-.thumbnail img {
+.thumbnail img, .thumbnail a img {
     height: 150px;
 }
 
