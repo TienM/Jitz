@@ -94,7 +94,11 @@ width: 90%;
 }
 
 .whiteText{
-  color: white;
+  color: white; 
+  -webkit-transition:color .10s ease-in; 
+   -moz-transition:color .10s ease-in; 
+   -o-transition:color .10s ease-in; 
+   transition:color .10s ease-in; 
 }
 
 
