@@ -359,13 +359,3 @@ a:hover {
   color: #ffda8e;
   text-decoration: none;
 }
-
-/*Finish fixing this*/
-.circleText {
-   color: #CFB055;
-  -webkit-transition:color .10s ease-in; 
-   -moz-transition:color .10s ease-in; 
-   -o-transition:color .10s ease-in; 
-   transition:color .10s ease-in;
-  
-}
