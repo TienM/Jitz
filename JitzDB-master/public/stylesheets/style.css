@@ -109,11 +109,11 @@ width: 90%;
 }
 
 .thumbnail img {
-    height: 150px;
+    height: 200px;
 }
 
 .thumbnail a img {
-  height: 150px;
+  height: 200px;
 }
 
 .thumbnail .description {
@@ -127,7 +127,6 @@ width: 90%;
   color: gray;
   overflow: hidden;
   height: 100px;
-  text-overflow: ellipsis;
 }
 .price {
     font-weight: bold;
