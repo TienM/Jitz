@@ -357,5 +357,6 @@ a {
 
 a:hover {
   color: #ffda8e;
+  /*color: #f6ea8c;*/
   text-decoration: none;
 }
