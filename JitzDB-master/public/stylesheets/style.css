@@ -108,10 +108,13 @@ width: 90%;
   border-radius: 10px;
 }
 
-.thumbnail img, .thumbnail a img {
+.thumbnail img {
     height: 150px;
 }
 
+.thumbnail img a {
+  height: 150px;
+}
 
 .thumbnail .description {
     color: #7f7f7f;
