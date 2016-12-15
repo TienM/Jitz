@@ -123,6 +123,7 @@ width: 90%;
 .thumbnail .description {
     color: #7f7f7f;
     overflow: hidden;
+    text-align: center;
     /*text-overflow: ellipsis;*/
     /*white-space: nowrap;*/
 }
