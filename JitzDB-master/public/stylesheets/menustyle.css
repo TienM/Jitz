@@ -13,6 +13,10 @@
   border: 1px solid;
 }
 
+@media screen and (max-width:460px) {
+  width: 25%;
+}
+ 
 .circleText{
   text-align: center !important;
   text-indent: -40px !important;
