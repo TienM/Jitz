@@ -21,15 +21,15 @@ module.exports = function Cart(oldCart) {
         }
 
 
-            /** Individual item price and rounds it to two digits after point*/
+            /** Individual item price * quantity of the same item*/
             storedItem.qty++;
             storedItem.price = Number(storedItem.item.price * storedItem.qty);
 
             /** Updates total quantity,price and taxes */
             this.totalQty++;
             this.subTotal += Number(storedItem.item.price);
-            this.totalTax += Number(storedItem.item.price * .0825);
-            this.totalPrice += Number(storedItem.item.price)+ (storedItem.item.price * .0825);
+            this.totalTax += Number(storedItem.item.price / 100 * 8.25);
+            this.totalPrice += Number(storedItem.item.price) + (storedItem.item.price / 100 * 8.25);
 
 
       };
@@ -40,8 +40,8 @@ module.exports = function Cart(oldCart) {
         this.totalQty--;
 
         this.subTotal -= Number(this.items[id].item.price);
-        this.totalTax -= Number(this.items[id].item.price * .0825);
-        this.totalPrice -= Number(this.items[id].item.price) + (this.items[id].item.price * .0825);
+        this.totalTax -= Number(this.items[id].item.price / 100 * 8.25);
+        this.totalPrice -= Number(this.items[id].item.price) + (this.items[id].item.price / 100 * 8.25);
 
         if (this.items[id].qty <= 0) {
             delete this.items[id];
@@ -54,14 +54,14 @@ module.exports = function Cart(oldCart) {
 
         this.totalQty++;
         this.subTotal += Number(this.items[id].item.price);
-        this.totalTax += Number(this.items[id].item.price * .0825 );
-        this.totalPrice += Number(this.items[id].item.price) + (this.items[id].item.price * .0825);
+        this.totalTax += Number(this.items[id].item.price / 100 * 8.25);
+        this.totalPrice += Number(this.items[id].item.price) + (this.items[id].item.price / 100 * 8.25);
     };
 
     this.removeItem = function(id) {
         this.subTotal -= Number(this.items[id].item.price * this.items[id].qty);
-        this.totalTax -= Number(this.items[id].item.price * this.items[id].qty * .0825);
-        this.totalPrice -= Number(this.items[id].item.price * this.items[id].qty) + (this.items[id].item.price * this.items[id].qty * .0825);
+        this.totalTax -= Number(this.items[id].item.price * this.items[id].qty / 100 * 8.25);
+        this.totalPrice -= Number(this.items[id].item.price * this.items[id].qty) + (this.items[id].item.price * this.items[id].qty / 100 * 8.25);
 
         this.totalQty -= this.items[id].qty;
         delete this.items[id];
